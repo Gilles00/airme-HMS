@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    {% load staticfiles %}
+    {% load static %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -18,7 +18,7 @@
 
     <link rel="stylesheet" href="{% static 'hospital/css/style.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static 'reception/css/style.css' %}" type="text/css">
-    <title>{% block title %} Kisiizi Hospital {% endblock title %}</title>
+    <title>{% block title %} Kagando Mission Hospital {% endblock title %}</title>
   </head>
 
   <body>
@@ -31,7 +31,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="{% url 'hospital:index' %}">Kisiizi Hospital</a>
+          <a class="navbar-brand" href="{% url 'hospital:index' %}">Kagando Mission Hospital</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -74,7 +74,7 @@
     {% endblock content %}
 
     <footer class="text-center footer">
-        <p class="text-center">Copyright &copy;2020 Kisiizi Hospital All Rights Reserved<br/>By Kisiizi Int.</p>
+        <p class="text-center">Copyright &copy;2022 Kagando Mission Hospital All Rights Reserved<br/>By Kagando Int.</p>
     </footer>
 
     <!-- All the link to js scripts to come last. -->

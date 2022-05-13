@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
+from re import template
 from decouple import config, Csv
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -151,7 +152,7 @@ MEDIA_URL = '/media/'
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
 # project meta data
-HOSPITAL_NAME = "KISIIZI HOSPITAL"
+HOSPITAL_NAME = "KAGANDO MISSION HOSPITAL"
 HOSPITAL_SLOGAN = "We don't treat, we HEAL"
 
 # authentication settings

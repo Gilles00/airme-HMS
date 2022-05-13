@@ -35,9 +35,9 @@ class Treatment(TimeStampedModel):
 class Vaccine(TimeStampedModel):
     name = models.CharField(max_length=100)
     live = models.BooleanField(blank=True)
-    absorved = models.BooleanField(blank=True)
-    inactivated = models.BooleanField(blank=True,)
-    oral = models.BooleanField(blank=True)
+    absorved = models.BooleanField(null=True)
+    inactivated = models.BooleanField(null=True,)
+    oral = models.BooleanField(null=True)
 
     def __str__(self):
         return self.name
