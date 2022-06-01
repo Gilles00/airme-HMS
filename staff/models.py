@@ -44,8 +44,8 @@ class Speciality(TimeStampedModel):
 class Doctor(Person):
     person = models.OneToOneField(User, related_name='doctors', null=True, on_delete=models.SET_NULL)
     avatar = models.ImageField(upload_to='avatars/doctors', null=True, blank=True)
-    specialty = models.ManyToManyField(Speciality)
-    user_type = models.ForeignKey(UserType, related_name='doctors', null=True, on_delete=models.SET_NULL)
+    # specialty = models.ManyToManyField(Speciality)
+    # user_type = models.ForeignKey(UserType, related_name='doctors', null=True, on_delete=models.SET_NULL)
 
     def __str__(self):
         return '{} {}'.format(self.first_name, self.last_name)
